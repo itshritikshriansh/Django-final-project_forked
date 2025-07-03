@@ -28,12 +28,10 @@ class QuestionAdmin(admin.ModelAdmin):
     list_display = ['content']
 
 # <HINT> Register Question and Choice models here
-admin.site.register(QuestionInline, QuestionAdmin)
+admin.site.register(Question, QuestionAdmin)
 admin.site.register(Course, CourseAdmin)
 admin.site.register(Lesson, LessonAdmin)
-admin.site.register( ChoiceInline)
 admin.site.register(Instructor)
 admin.site.register(Learner)
-admin.site.register(Question)
 admin.site.register(Choice)
 admin.site.register(Submission)
